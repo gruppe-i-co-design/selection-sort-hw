@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.all;
+
 entity counter is 
 port (
         input: in std_logic_vector(7 downto 0);

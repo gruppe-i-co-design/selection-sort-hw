@@ -1,7 +1,8 @@
+library work;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use ieee.numeric_std.all;
-library work;
+use IEEE.NUMERIC_STD.ALL;
+
 entity top is 
 port (
     clk, rst : in std_logic
