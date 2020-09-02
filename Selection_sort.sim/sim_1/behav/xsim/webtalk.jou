@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Webtalk v2020.1 (64-bit)
-# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Tue Sep  1 16:54:24 2020
-# Process ID: 13460
-# Current directory: C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.sim/sim_1/behav/xsim/xsim.dir/top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Wed Sep  2 09:49:03 2020
+# Process ID: 5414
+# Current directory: /home/oruud/VProjects/selection-sort/Selection_sort.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/oruud/VProjects/selection-sort/Selection_sort.sim/sim_1/behav/xsim/xsim.dir/top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/oruud/VProjects/selection-sort/Selection_sort.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/oruud/VProjects/selection-sort/Selection_sort.sim/sim_1/behav/xsim/webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.sim/sim_1/behav/xsim/xsim.dir/top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+source /home/oruud/VProjects/selection-sort/Selection_sort.sim/sim_1/behav/xsim/xsim.dir/top_tb_behav/webtalk/xsim_webtalk.tcl -notrace

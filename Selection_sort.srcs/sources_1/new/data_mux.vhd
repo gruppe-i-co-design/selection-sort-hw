@@ -1,19 +1,19 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
 
-entity data_mux is
-  Port (
-        A, B: in std_logic_vector (7 downto 0);
-        ctr: in std_logic;
-        output : out std_logic_vector(7 downto 0)
-     );
-end;
+ENTITY data_mux IS
+	PORT (
+		A, B : IN STD_LOGIC_VECTOR (7 DOWNTO 0);
+		ctr : IN STD_LOGIC;
+		output : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+	);
+END;
 
-architecture arch of data_mux is
+ARCHITECTURE arch OF data_mux IS
 
-begin
+BEGIN
 
-output <= A when ctr = '0' else
-    B;
-    
-end;
+	output <= A WHEN ctr = '0' ELSE
+		B;
+
+END;

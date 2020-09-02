@@ -1,29 +1,26 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
 
-entity reg is 
-port 
-(   
-    clk, rst, load: in std_logic;
-    input: in std_logic_vector(7 downto  0);
-    output: out std_logic_vector(7 downto 0)
-    
-    );
-end;
+ENTITY reg IS
+	PORT (
+		clk, rst, load : IN STD_LOGIC;
+		input : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		output : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
 
-architecture arch of reg is 
+	);
+END;
 
-begin
--- clk process
-process(clk, rst)
-begin
-    if (rst='1') then
-        output <=(others=>'0');
-    elsif rising_edge(clk) and load='1' then
-        output <= input;
-    end if;
-end process;
+ARCHITECTURE arch OF reg IS
 
-end;
+BEGIN
+	-- clk process
+	PROCESS (clk, rst)
+	BEGIN
+		IF (rst = '1') THEN
+			output <= (OTHERS => '0');
+		ELSIF rising_edge(clk) AND load = '1' THEN
+			output <= input;
+		END IF;
+	END PROCESS;
 
-
+END;

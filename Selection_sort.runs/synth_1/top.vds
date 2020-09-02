@@ -1,58 +1,57 @@
 #-----------------------------------------------------------
 # Vivado v2020.1 (64-bit)
-# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Tue Sep  1 17:01:18 2020
-# Process ID: 14376
-# Current directory: C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.runs/synth_1
-# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.runs/synth_1/top.vds
-# Journal file: C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.runs/synth_1\vivado.jou
+# Start of session at: Wed Sep  2 10:10:58 2020
+# Process ID: 9642
+# Current directory: /home/oruud/VProjects/selection-sort/Selection_sort.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /home/oruud/VProjects/selection-sort/Selection_sort.runs/synth_1/top.vds
+# Journal file: /home/oruud/VProjects/selection-sort/Selection_sort.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
-create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1096.113 ; gain = 0.000
 Command: synth_design -top top -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 11680
+INFO: [Synth 8-7075] Helper process launched with PID 9673
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2004.195 ; gain = 0.000 ; free physical = 191 ; free virtual = 7181
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/top.vhd:10]
-INFO: [Synth 8-638] synthesizing module 'control' [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/control.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'control' (1#1) [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/control.vhd:35]
-INFO: [Synth 8-638] synthesizing module 'ram' [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/ram.vhd:13]
-WARNING: [Synth 8-614] signal 'write' is read in the process but is not in the sensitivity list [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/ram.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'ram' (2#1) [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/ram.vhd:13]
-INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/counter.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'counter' (3#1) [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/counter.vhd:13]
-INFO: [Synth 8-638] synthesizing module '\reg ' [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/register.vhd:15]
-WARNING: [Synth 8-614] signal 'load' is read in the process but is not in the sensitivity list [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/register.vhd:19]
-INFO: [Synth 8-256] done synthesizing module '\reg ' (4#1) [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/register.vhd:15]
-INFO: [Synth 8-638] synthesizing module 'addr_mux' [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/addr_mux.vhd:33]
-INFO: [Synth 8-256] done synthesizing module 'addr_mux' (5#1) [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/addr_mux.vhd:33]
-INFO: [Synth 8-638] synthesizing module 'data_mux' [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/data_mux.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'data_mux' (6#1) [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/data_mux.vhd:12]
-INFO: [Synth 8-638] synthesizing module 'comparator' [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/comparetor.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'comparator' (7#1) [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/comparetor.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'top' (8#1) [C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/top.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'top' [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/top.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'control' [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/control.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'control' (1#1) [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/control.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'ram' [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/ram.vhd:14]
+WARNING: [Synth 8-614] signal 'write' is read in the process but is not in the sensitivity list [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/ram.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ram' (2#1) [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/ram.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'counter' [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/counter.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'counter' (3#1) [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/counter.vhd:14]
+INFO: [Synth 8-638] synthesizing module '\reg ' [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/reg.vhd:13]
+WARNING: [Synth 8-614] signal 'load' is read in the process but is not in the sensitivity list [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/reg.vhd:17]
+INFO: [Synth 8-256] done synthesizing module '\reg ' (4#1) [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/reg.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'addr_mux' [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/addr_mux.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'addr_mux' (5#1) [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/addr_mux.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'data_mux' [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/data_mux.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'data_mux' (6#1) [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/data_mux.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'comparator' [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/comparator.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (7#1) [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/comparator.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'top' (8#1) [/home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/top.vhd:11]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2004.195 ; gain = 0.000 ; free physical = 708 ; free virtual = 7840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2004.195 ; gain = 0.000 ; free physical = 702 ; free virtual = 7836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2012.027 ; gain = 7.832 ; free physical = 702 ; free virtual = 7837
 ---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'control'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -66,7 +65,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in modul
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'control'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2012.027 ; gain = 7.832 ; free physical = 682 ; free virtual = 7826
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -74,7 +73,7 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input    8 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 3     
 +---Registers : 
 	                8 Bit    Registers := 5     
 +---Muxes : 
@@ -101,20 +100,20 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2073.559 ; gain = 69.363 ; free physical = 407 ; free virtual = 7645
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2073.559 ; gain = 69.363 ; free physical = 405 ; free virtual = 7643
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2073.559 ; gain = 69.363 ; free physical = 405 ; free virtual = 7643
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -132,37 +131,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2073.559 ; gain = 69.363 ; free physical = 355 ; free virtual = 7642
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2073.559 ; gain = 69.363 ; free physical = 355 ; free virtual = 7642
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2073.559 ; gain = 69.363 ; free physical = 355 ; free virtual = 7642
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2073.559 ; gain = 69.363 ; free physical = 355 ; free virtual = 7642
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2073.559 ; gain = 69.363 ; free physical = 355 ; free virtual = 7642
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2073.559 ; gain = 69.363 ; free physical = 355 ; free virtual = 7642
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -187,23 +186,23 @@ Report Instance Areas:
 |1     |top      |       |     0|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2073.559 ; gain = 69.363 ; free physical = 355 ; free virtual = 7642
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1096.113 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2073.559 ; gain = 69.363 ; free physical = 355 ; free virtual = 7642
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2073.566 ; gain = 69.363 ; free physical = 355 ; free virtual = 7642
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1096.113 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2073.566 ; gain = 0.000 ; free physical = 314 ; free virtual = 7634
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1140.379 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2154.184 ; gain = 0.000 ; free physical = 285 ; free virtual = 7622
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 28 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1140.379 ; gain = 44.266
-INFO: [Common 17-1381] The checkpoint 'C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.runs/synth_1/top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 2154.184 ; gain = 150.160 ; free physical = 425 ; free virtual = 7764
+INFO: [Common 17-1381] The checkpoint '/home/oruud/VProjects/selection-sort/Selection_sort.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Sep  1 17:02:02 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  2 10:11:33 2020...

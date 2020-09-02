@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.runs/synth_1/top.tcl"
+  variable script "/home/oruud/VProjects/selection-sort/Selection_sort.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -76,24 +76,24 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.cache/wt [current_project]
-set_property parent.project_path C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.xpr [current_project]
+set_property webtalk.parent_dir /home/oruud/VProjects/selection-sort/Selection_sort.cache/wt [current_project]
+set_property parent.project_path /home/oruud/VProjects/selection-sort/Selection_sort.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.cache/ip [current_project]
+set_property ip_output_repo /home/oruud/VProjects/selection-sort/Selection_sort.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/addr_mux.vhd
-  C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/comparetor.vhd
-  C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/control.vhd
-  C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/counter.vhd
-  C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/data_mux.vhd
-  C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/ram.vhd
-  C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/register.vhd
-  C:/Users/m_rah/Desktop/Co-design/Selection_sort/Selection_sort.srcs/sources_1/new/top.vhd
+  /home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/addr_mux.vhd
+  /home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/comparator.vhd
+  /home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/control.vhd
+  /home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/counter.vhd
+  /home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/data_mux.vhd
+  /home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/ram.vhd
+  /home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/reg.vhd
+  /home/oruud/VProjects/selection-sort/Selection_sort.srcs/sources_1/new/top.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

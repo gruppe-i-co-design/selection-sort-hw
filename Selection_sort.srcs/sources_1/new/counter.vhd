@@ -1,31 +1,31 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.all;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
 
-entity counter is 
-port (
-        input: in std_logic_vector(7 downto 0);
-        load, incr, clk, rst: in std_logic;
-        output: out std_logic_vector(7 downto 0)
-        
-    );
-end;
+ENTITY counter IS
+	PORT (
+		input : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		load, incr, clk, rst : IN STD_LOGIC;
+		output : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
 
-architecture arch of counter is 
-signal current_value, next_value: unsigned(7 downto 0);  
-begin
-process(clk, rst)
-begin
-    if rst='1' then
-        current_value <=(others=>'0');
-    elsif rising_edge(clk)then
-        current_value <= next_value;
-    end if;
-end process;
--- current_value logic
-next_value <= current_value +1 when incr = '1' else
-unsigned(input) when load = '1' else
-current_value;
-           
-output <= std_logic_vector(current_value);
-end;
+	);
+END;
+
+ARCHITECTURE arch OF counter IS
+	SIGNAL current_value, next_value : unsigned(7 DOWNTO 0);
+BEGIN
+	PROCESS (clk, rst)
+	BEGIN
+		IF rst = '1' THEN
+			current_value <= (OTHERS => '0');
+		ELSIF rising_edge(clk) THEN
+			current_value <= next_value;
+		END IF;
+	END PROCESS;
+	-- current_value logic
+	next_value <= current_value + 1 WHEN incr = '1' ELSE
+		unsigned(input) WHEN load = '1' ELSE
+		current_value;
+
+	output <= STD_LOGIC_VECTOR(current_value);
+END;

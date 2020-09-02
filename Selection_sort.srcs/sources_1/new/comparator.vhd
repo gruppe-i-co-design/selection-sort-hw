@@ -1,20 +1,19 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
 
-entity comparator is 
+ENTITY comparator IS
 
-port
-    (
-    A, B : in std_logic_vector(7 downto 0);
-    output: out std_logic
-    );
-    
-end;
+	PORT (
+		A, B : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		output : OUT STD_LOGIC
+	);
 
-architecture arch of comparator is 
-begin
+END;
 
-output <= '1' when A > B else
-'0';
+ARCHITECTURE arch OF comparator IS
+BEGIN
 
-end;
+	output <= '1' WHEN A > B ELSE
+		'0';
+
+END;
