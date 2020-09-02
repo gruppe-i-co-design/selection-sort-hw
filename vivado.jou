@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Sep  2 10:37:57 2020
+# Process ID: 5224
+# Current directory: C:/Users/m_rah/Desktop/selection-sort
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7308 C:\Users\m_rah\Desktop\selection-sort\Selection_sort.xpr
+# Log file: C:/Users/m_rah/Desktop/selection-sort/vivado.log
+# Journal file: C:/Users/m_rah/Desktop/selection-sort\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/m_rah/Desktop/selection-sort/Selection_sort.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/m_rah/Desktop/selection-sort/top_tb_behav.wcfg
+source top_tb.tcl
+run 0.015 ms
+restart
+run all
+restart
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+relaunch_sim
+run 0.015 ms
+run 0.015 ms
+restart
+run 0.015 ms
+close_sim
+launch_simulation
+open_wave_config C:/Users/m_rah/Desktop/selection-sort/top_tb_behav.wcfg
+source top_tb.tcl
+run 0.015 ms
+restart
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+save_wave_config {C:/Users/m_rah/Desktop/selection-sort/top_tb_behav.wcfg}
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+open_run synth_1 -name synth_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/m_rah/Desktop/selection-sort/top_tb_behav.wcfg
+source top_tb.tcl
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+run 0.015 ms
+close_sim
