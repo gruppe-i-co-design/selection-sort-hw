@@ -4,14 +4,14 @@ USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 
 ENTITY top IS
-    GENERIC (
-            length: UNSIGNED(7 DOWNTO 0) := x"10"
-            );
+	GENERIC (
+		length : UNSIGNED(7 DOWNTO 0) := x"10"
+	);
 	PORT (
 		clk, rst : IN STD_LOGIC;
-		ram_write: OUT STD_LOGIC;
-		ram_data, ram_addr :OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-		ram_output :IN  STD_LOGIC_VECTOR(7 DOWNTO 0)
+		ram_write : OUT STD_LOGIC;
+		ram_data, ram_addr : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+		ram_output : IN STD_LOGIC_VECTOR(7 DOWNTO 0)
 	);
 END;
 ARCHITECTURE arch OF top IS
@@ -31,30 +31,28 @@ ARCHITECTURE arch OF top IS
 	SIGNAL reg_min_i_output : STD_LOGIC_VECTOR(7 DOWNTO 0);
 	SIGNAL reg_index_v_output : STD_LOGIC_VECTOR(7 DOWNTO 0);
 BEGIN
-    ram_addr <= temp_ram_addr;
-    
-	control : ENTITY work.control 
-	GENERIC MAP (length => length)
-	PORT MAP(
-		clk => clk,
-		rst => rst,
+	ram_addr <= temp_ram_addr;
 
-		comp_out => comp_out,
-		i_cnt_value => i_cnt_output,
-		c_cnt_value => c_cnt_output,
+	control : ENTITY work.control
+		GENERIC MAP(length => length)
+		PORT MAP(
+			clk => clk,
+			rst => rst,
 
-		min_v_load => min_v_load,
-		min_i_load => min_i_load,
-		index_v_load => index_v_load,
-		c_cnt_load => c_cnt_load,
-		c_cnt_incr => c_cnt_incr,
-		i_cnt_incr => i_cnt_incr,
-		write => ram_write,
-		data_mux => data_mux,
-		addr_mux => addr_mux
+			comp_out => comp_out,
+			i_cnt_value => i_cnt_output,
+			c_cnt_value => c_cnt_output,
+
+			min_v_load => min_v_load,
+			min_i_load => min_i_load,
+			index_v_load => index_v_load,
+			c_cnt_load => c_cnt_load,
+			c_cnt_incr => c_cnt_incr,
+			i_cnt_incr => i_cnt_incr,
+			write => ram_write,
+			data_mux => data_mux,
+			addr_mux => addr_mux
 		);
-
-
 	i_cnt : ENTITY work.counter PORT MAP(
 		input => (OTHERS => '0'),
 		output => i_cnt_output,

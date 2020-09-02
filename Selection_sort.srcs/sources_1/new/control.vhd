@@ -2,9 +2,9 @@ LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 ENTITY control IS
-    GENERIC (
-            length: UNSIGNED(7 DOWNTO 0) := x"10"
-            );
+	GENERIC (
+		length : UNSIGNED(7 DOWNTO 0) := x"10"
+	);
 	PORT (
 		clk, rst : IN STD_LOGIC;
 		comp_out : IN STD_LOGIC;
