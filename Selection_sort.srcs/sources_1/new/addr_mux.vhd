@@ -12,9 +12,7 @@ END;
 ARCHITECTURE arch OF addr_mux IS
 
 BEGIN
-
 	output <= A WHEN ctr = "00" ELSE
 		B WHEN ctr = "01" ELSE
 		C;
-
 END;

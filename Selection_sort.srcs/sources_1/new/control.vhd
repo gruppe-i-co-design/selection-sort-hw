@@ -1,7 +1,10 @@
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
-
+USE IEEE.NUMERIC_STD.ALL;
 ENTITY control IS
+	GENERIC (
+		length : UNSIGNED(7 DOWNTO 0) := x"10"
+	);
 	PORT (
 		clk, rst : IN STD_LOGIC;
 		comp_out : IN STD_LOGIC;
@@ -52,8 +55,8 @@ BEGIN
 
 			WHEN S1 =>
 				c_cnt_incr <= '1';
-				IF i_cnt_value >= x"10" THEN next_state <= S5;
-				ELSIF c_cnt_value >= x"10" THEN next_state <= S2;
+				IF (UNSIGNED(i_cnt_value)) >= length THEN next_state <= S5;
+				ELSIF (UNSIGNED(c_cnt_value)) >= length THEN next_state <= S2;
 				ELSIF comp_out = '1' THEN
 					min_v_load <= '1';
 					min_i_load <= '1';

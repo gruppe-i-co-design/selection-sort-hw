@@ -12,8 +12,6 @@ END;
 ARCHITECTURE arch OF data_mux IS
 
 BEGIN
-
 	output <= A WHEN ctr = '0' ELSE
 		B;
-
 END;
