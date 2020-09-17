@@ -7,7 +7,6 @@ ENTITY counter IS
 		input : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
 		load, incr, clk, rst : IN STD_LOGIC;
 		output : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
-
 	);
 END;
 
@@ -22,6 +21,7 @@ BEGIN
 			current_value <= next_value;
 		END IF;
 	END PROCESS;
+
 	-- current_value logic
 	next_value <= current_value + 1 WHEN incr = '1' ELSE
 		unsigned(input) WHEN load = '1' ELSE

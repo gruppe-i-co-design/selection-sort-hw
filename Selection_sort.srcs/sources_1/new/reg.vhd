@@ -6,14 +6,12 @@ ENTITY reg IS
 		clk, rst, load : IN STD_LOGIC;
 		input : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
 		output : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
-
 	);
 END;
 
 ARCHITECTURE arch OF reg IS
 
 BEGIN
-	-- clk process
 	PROCESS (clk, rst)
 	BEGIN
 		IF (rst = '1') THEN
@@ -22,5 +20,4 @@ BEGIN
 			output <= input;
 		END IF;
 	END PROCESS;
-
 END;
